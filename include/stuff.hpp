@@ -57,3 +57,11 @@ using namespace std;
 #define CYN "\033[1;36m"
 #define WHT "\033[1;37m"
 #define RESET "\033[0m"
+
+// Print colored text
+template<typename... Args>
+void print(string color, Args... args) {
+	cout << color;
+	(cout << ... << args);
+	cout << RESET << endl;
+}

@@ -40,7 +40,7 @@ int main() {
         }
 		print(GRN, "Connection accepted");
         handleClient(newSocket);
-		print(GRN, "Connection closed");
+		print(MAG, "Connection closed");
     }
 
     close(serverFd);

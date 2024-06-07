@@ -3,7 +3,7 @@
 
 #include <filesystem>
 
-namespace fs = std::filesystem;
+namespace fs = filesystem;
 
 string generateDirectoryListing(const string& path) {
     ostringstream oss;
